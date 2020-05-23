@@ -1,4 +1,7 @@
 @import url(./__logo/header__logo.css);
+@import url(./__lang-links/header__lang-links.css);
+@import url(./__lang-link/header__lang-link.css);
+@import url(./__lang-link/_selected/header__lang-link_selected.css);
 
 .header {
   display: flex;
@@ -6,27 +9,4 @@
   padding: 28px 48px 24px 48px;
   align-items: flex-end;
   justify-content: space-between;
-}
-
-.header__lang-links {
-  list-style: none;
-  margin: 0;
-  margin-bottom: 5px;
-  padding: 0;
-  display: flex;
-  flex-direction: row;
-}
-
-.header__lang-link {
-  color: var(--text-color);
-  text-decoration: none;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 24px;
-  line-height: 1.15;
-  margin-left: 18px;
-}
-
-.header__lang-link_selected {
-  text-decoration: underline;
 }
