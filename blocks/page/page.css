@@ -1,0 +1,17 @@
+:root {
+  --color-dark-gray: #2A2C2F;
+  --color-light-gray: #AAAAAA;
+
+  --background-color: var(--color-dark-gray);
+  --secondary-text-color: var(--color-light-gray);
+
+  --img-hover-color: #2A2C2F;
+  --default-hover-opaque: 80%;
+  --img-hover-opaque: var(--default-hover-opaque);
+  --link-hover-opaque: var(--default-hover-opaque);
+}
+
+.page {
+  /* margin: 0 auto; */
+  font-family: Inter;
+}
