@@ -1,11 +1,13 @@
 :root {
+  --color-white: white;
   --color-dark-gray: #2A2C2F;
   --color-light-gray: #AAAAAA;
 
   --background-color: var(--color-dark-gray);
+  --text-color: var(--color-white);
   --secondary-text-color: var(--color-light-gray);
 
-  --img-hover-color: #2A2C2F;
+  --img-hover-color: var(--color-dark-gray);
   --default-hover-opaque: 80%;
   --img-hover-opaque: var(--default-hover-opaque);
   --link-hover-opaque: var(--default-hover-opaque);
@@ -14,4 +16,9 @@
 .page {
   /* margin: 0 auto; */
   font-family: Inter;
+  background-color: var(--background-color);
+  color: var(--text-color);
+
+  /* display: flex;
+  flex-direction: column; */
 }
