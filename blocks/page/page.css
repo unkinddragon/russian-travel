@@ -34,10 +34,10 @@
   grid-template-areas:
     ". . header . ."
     ". . lead . .";
-  grid-gap: 92px 0;
+  grid-gap: 92px 0; */
 }
 
-.header {
+/*.header {
   grid-area: header;
   justify-self: stretch;
   margin-bottom: -44px;
