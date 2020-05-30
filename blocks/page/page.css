@@ -21,4 +21,23 @@
   min-width: 320px;
   /* display: flex;
   flex-direction: column; */
+
+  /*display: grid;
+  justify-items: center;
+  grid-template-columns: minmax(16px,24px) minmax(0,24px) auto minmax(0,24px) minmax(16px,24px);
+  grid-template-rows: auto;
+  grid-template-areas:
+    ". . header . ."
+    ". . lead . .";
+  grid-gap: 92px 0;
 }
+
+.header {
+  grid-area: header;
+  justify-self: stretch;
+  margin-bottom: -44px;
+}
+
+.lead {
+  grid-area: lead;
+}*/
