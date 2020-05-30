@@ -1,0 +1,106 @@
+.place {
+  display: grid;
+  grid: "title website"
+        "image paragraphs"
+        / 51fr 49fr;
+  gap: 48px 40px;
+}
+
+@media screen and (max-width: 1100px) {
+  .place {
+    gap: 48px 32px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .place {
+    gap: 48px 28px;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .place {
+    grid: "title"
+          "image"
+          "paragraphs"
+          / 1fr;
+    gap: 32px;
+  }
+}
+
+.place__title {
+  grid-area: title;
+  margin: 0;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 72px;
+  line-height: 1.06; /* 76px */
+}
+
+@media screen and (max-width: 768px) {
+  .place__title {
+    font-size: 42px;
+    line-height: 1.1;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .place__title {
+    font-size: 32px;
+    line-height: 1.1;
+  }
+}
+
+.place__image {
+  grid-area: image;
+  width: 100%;
+}
+
+.place__website {
+  grid-area: website;
+  align-self: end;
+}
+
+@media screen and (max-width: 470px) {
+  .place__website {
+    display: none;
+  }
+}
+
+.place__paragraphs {
+  grid-area: paragraphs;
+}
+
+.place__paragraph {
+  margin: 0;
+  margin-bottom: 24px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1.67;
+}
+
+@media screen and (max-width: 768px) {
+  .place__paragraph {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+}
+
+.place__url-heading {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 1.7;
+  letter-spacing: 0.2em;
+  color: var(--secondary-text-color);
+}
+
+.place__link {
+  color: var(--text-color);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1.22px;
+  text-decoration: underline;
+}
