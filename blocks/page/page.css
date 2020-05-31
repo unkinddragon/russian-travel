@@ -1,6 +1,7 @@
 @font-face {
   font-family: Inter;
-  src: url('../../vendor/fonts/Inter-VariableFont_slnt\,wght.ttf') format('truetype');
+  src:  url('../../vendor/fonts/Inter.var.woff2')                   format('woff2'),
+        url('../../vendor/fonts/Inter-VariableFont_slnt\,wght.ttf') format('truetype');
 }
 
 :root {
@@ -20,7 +21,7 @@
 
 .page {
   margin: 0 auto;
-  font-family: Inter;
+  font-family: 'Inter', sans-serif;
   background-color: var(--background-color);
   color: var(--text-color);
   min-width: 320px;
