@@ -1,0 +1,4 @@
+.page__header {
+  grid-area: header;
+  justify-self: stretch;
+}

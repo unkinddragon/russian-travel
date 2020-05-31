@@ -1,3 +1,11 @@
+@import url(./__cover/page__cover.css);
+@import url(./__footer/page__footer.css);
+@import url(./__header/page__header.css);
+@import url(./__intro/page__intro.css);
+@import url(./__lead/page__lead.css);
+@import url(./__photo-grid/page__photo-grid.css);
+@import url(./__places/page__places.css);
+
 @font-face {
   font-family: Inter;
   src:  url('../../vendor/fonts/Inter.var.woff2')                   format('woff2'),
@@ -112,36 +120,4 @@
     ". . . . ." 24px
     / 16px 0 auto 0 16px;  /* <- changes */
   }
-}
-
-.header {
-  grid-area: header;
-  justify-self: stretch;
-}
-
-.lead {
-  grid-area: lead;
-}
-
-.intro {
-  grid-area: intro;
-  justify-self: left;
-}
-
-.photo-grid {
-  grid-area: photo-grid;
-}
-
-.places {
-  grid-area: places;
-}
-
-.cover {
-  grid-area: cover;
-  justify-self: stretch;
-}
-
-.footer {
-  grid-area: footer;
-  justify-self: stretch;
 }

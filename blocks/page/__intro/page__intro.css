@@ -1,0 +1,4 @@
+.page__intro {
+  grid-area: intro;
+  justify-self: left;
+}
