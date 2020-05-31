@@ -5,7 +5,7 @@
   justify-content: space-between;
 }
 
-@media screen and (max-width: 660px) {
+@media screen and (max-width: 60px) {
   .footer {
     flex-direction: column;
     /*justify-content: start;*/

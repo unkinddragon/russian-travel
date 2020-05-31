@@ -19,31 +19,125 @@
 }
 
 .page {
-  /* margin: 0 auto; */
+  margin: 0 auto;
   font-family: Inter;
   background-color: var(--background-color);
   color: var(--text-color);
   min-width: 320px;
   max-width: 1600px;
-  /* display: flex;
-  flex-direction: column; */
 
-  /*display: grid;
+  display: grid;
   justify-items: center;
-  grid-template-columns: minmax(16px,24px) minmax(0,24px) auto minmax(0,24px) minmax(16px,24px);
-  grid-template-rows: auto;
-  grid-template-areas:
-    ". . header . ."
-    ". . lead . .";
-  grid-gap: 92px 0; */
+  grid: ". . . . ." 28px
+        ". header header header ."
+        ". . . . ." 56px
+        ". . lead . ."
+        ". . . . ." 92px
+        ". . intro . ."
+        ". . . . ." 92px
+        ". photo-grid photo-grid photo-grid ."
+        ". . . . ." 92px
+        ". . places . ."
+        ". . . . ." 92px
+        ". cover cover cover ."
+        ". . . . ." 92px
+        ". footer footer footer."
+        ". . . . ." 24px
+        / 48px 100px auto 100px 48px;
 }
 
-/*.header {
+@media screen and (max-width: 1100px) {
+  .page {
+    /* could make 3 columns but rather keep it the same 5 */
+    grid: ". . . . ." 28px
+    ". header header header ."
+    ". . . . ." 56px
+    ". . lead . ."
+    ". . . . ." 92px
+    ". . intro . ."
+    ". . . . ." 92px
+    ". photo-grid photo-grid photo-grid ."
+    ". . . . ." 92px
+    ". . places . ."
+    ". . . . ." 92px
+    "cover cover cover cover cover" /* <- changes */
+    ". . . . ." 92px
+    ". footer footer footer."
+    ". . . . ." 24px
+    / 48px 0 auto 0 48px;  /* <- changes */
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .page {
+    grid: ". . . . ." 28px
+    ". header header header ."
+    ". . . . ." 48px
+    "lead lead lead lead lead" /* <- changes */
+    ". . . . ." 88px /* <- changes */
+    ". . intro . ."
+    ". . . . ." 88px
+    ". photo-grid photo-grid photo-grid ."
+    ". . . . ." 88px
+    ". . places . ."
+    ". . . . ." 88px
+    "cover cover cover cover cover"
+    ". . . . ." 88px
+    ". footer footer footer."
+    ". . . . ." 24px
+    / 24px 0 auto 0 24px;  /* <- changes */
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .page {
+    grid: ". . . . ." 28px
+    ". header header header ."
+    ". . . . ." 48px
+    "lead lead lead lead lead"
+    ". . . . ." 64px
+    ". . intro . ."
+    ". . . . ." 64px
+    ". photo-grid photo-grid photo-grid ."
+    ". . . . ." 64px
+    "places places places places places" /* <- changes */
+    ". . . . ." 64px
+    "cover cover cover cover cover"
+    ". . . . ." 64px
+    ". footer footer footer."
+    ". . . . ." 24px
+    / 16px 0 auto 0 16px;  /* <- changes */
+  }
+}
+
+.header {
   grid-area: header;
   justify-self: stretch;
-  margin-bottom: -44px;
 }
 
 .lead {
   grid-area: lead;
-}*/
+}
+
+.intro {
+  grid-area: intro;
+  justify-self: left;
+}
+
+.photo-grid {
+  grid-area: photo-grid;
+}
+
+.places {
+  grid-area: places;
+}
+
+.cover {
+  grid-area: cover;
+  justify-self: stretch;
+}
+
+.footer {
+  grid-area: footer;
+  justify-self: stretch;
+}

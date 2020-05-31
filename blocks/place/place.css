@@ -48,6 +48,7 @@
   .place__title {
     font-size: 32px;
     line-height: 1.1;
+    margin: 0 16px;
   }
 }
 
@@ -84,6 +85,12 @@
   .place__paragraph {
     font-size: 16px;
     line-height: 1.6;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .place__paragraph {
+    margin: 0 16px;
   }
 }
 
