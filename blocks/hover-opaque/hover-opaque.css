@@ -1,0 +1,3 @@
+.hover-opaque:hover {
+  opacity: var(--link-hover-opaque);
+}
