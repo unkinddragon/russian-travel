@@ -21,7 +21,7 @@
   }
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 470px) {
   .photo-grid {
     grid: auto-flow / repeat(1, 1fr);
     grid-gap: 12px;
