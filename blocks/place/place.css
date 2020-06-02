@@ -11,7 +11,7 @@
   display: grid;
   grid: "title website"
         "image paragraphs"
-        / 51fr 49fr;
+        / 49fr 51fr;
   gap: 48px 40px;
 }
 
