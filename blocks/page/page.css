@@ -6,29 +6,14 @@
 @import url(./__photo-grid/page__photo-grid.css);
 @import url(./__places/page__places.css);
 
-:root {
-  --color-white: white;
-  --color-dark-gray: #2A2C2F;
-  --color-light-gray: #AAAAAA;
-
-  --background-color: var(--color-dark-gray);
-  --text-color: var(--color-white);
-  --secondary-text-color: var(--color-light-gray);
-
-  --img-hover-color: var(--color-dark-gray);
-  --default-hover-opaque: 80%;
-  --img-hover-opaque: var(--default-hover-opaque);
-  --link-hover-opaque: var(--default-hover-opaque);
-}
-
 .page {
   margin: 0 auto;
   font-family: 'Inter', sans-serif;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: var(--background-color);
-  color: var(--text-color);
+  background-color: #2A2C2F;
+  color: white;
   min-width: 320px;
   max-width: 1280px;
 
