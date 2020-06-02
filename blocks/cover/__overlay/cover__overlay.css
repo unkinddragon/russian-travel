@@ -22,6 +22,13 @@
   }
 }
 
+@media screen and (max-width: 470px) {
+  .cover__overlay {
+    min-height: 200px;
+  }
+}
+
+
 .cover__overlay::before {
   position: absolute;
   width: 100%;
@@ -45,5 +52,11 @@
 @media screen and (max-width: 768px) {
   .cover__overlay::before {
     min-height: 480px;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .cover__overlay::before {
+    min-height: 200px;
   }
 }
