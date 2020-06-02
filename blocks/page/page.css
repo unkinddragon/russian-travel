@@ -51,7 +51,7 @@
   background-color: var(--background-color);
   color: var(--text-color);
   min-width: 320px;
-  max-width: 1600px;
+  max-width: 1280px;
 
   display: grid;
   justify-items: center;
