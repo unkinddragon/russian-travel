@@ -6,27 +6,6 @@
 @import url(./__photo-grid/page__photo-grid.css);
 @import url(./__places/page__places.css);
 
-@font-face {
-  font-family: Inter;
-  font-weight: normal;
-  src:  url('../../vendor/fonts/Inter-Regular.woff2') format('woff2'),
-        url('../../vendor/fonts/Inter-Regular.woff')  format('woff');
-}
-
-@font-face {
-  font-family: Inter;
-  font-weight: 900;
-  src:  url('../../vendor/fonts/Inter-Black.woff2') format('woff2'),
-        url('../../vendor/fonts/Inter-Black.woff')  format('woff');
-}
-
-@font-face {
-  font-family: Inter;
-  font-weight: bold;
-  src:  url('../../vendor/fonts/Inter-Bold.woff2') format('woff2'),
-        url('../../vendor/fonts/Inter-Bold.woff')  format('woff');
-}
-
 :root {
   --color-white: white;
   --color-dark-gray: #2A2C2F;
